@@ -37,7 +37,7 @@ const imagePathArray = Object.keys(imagePaths).map((key) => {
   return {
     visible: false,
     title: 'img',
-    url: imagePaths[key]?.default || '',
+    url: (imagePaths[key] as { default: string }).default || '',
   };
 });
 
