@@ -4,9 +4,7 @@
   "version": "0.0.11",
   "description": "家具展示",
   "keywords": [
-    "jiaju",
-    "json-view",
-    "json"
+    "jiaju"
   ],
   "homepage": "https://lgcxc.github.io/jiaju/",
   "license": "MIT",
@@ -19,24 +17,9 @@
     "url": "https://github.com/lgcxc/jiaju/issues",
     "email": "993372246@qq.com"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
-  "main": "./lib/jiaju.es.js",
-  "module": "./lib/jiaju.umd.js",
-  "types": "./lib/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./lib/jiaju.umd.js",
-      "require": "./lib/jiaju.es.js"
-    },
-    "./lib/style.css": "./lib/style.css"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "build:lib": "vue-tsc && vite build --mode lib",
     "preview": "vite preview",
     "changeset": "changeset",
     "version": "changeset version && npm install"
