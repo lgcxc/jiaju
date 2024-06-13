@@ -18,8 +18,9 @@
     "email": "993372246@qq.com"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "dev": "vite --open --mode development",
+    "build:site": "vue-tsc && vite build --mode site",
+    "build": "vue-tsc && vite build --mode release",
     "preview": "vite preview",
     "changeset": "changeset",
     "version": "changeset version && npm install"

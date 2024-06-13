@@ -2,13 +2,16 @@ import path from 'node:path';
 
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import svgLoader from 'vite-svg-loader';
+
+const CWD = process.cwd();
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
+  const { VITE_BASE_URL } = loadEnv(mode, CWD);
   return {
-    base: '/',
+    base: VITE_BASE_URL,
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
