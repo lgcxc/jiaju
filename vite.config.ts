@@ -8,7 +8,7 @@ import svgLoader from 'vite-svg-loader';
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: '/jiaju/',
+    base: '/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
